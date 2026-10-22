@@ -1,0 +1,53 @@
+@media (max-width: 991px) {
+    .display-3 {
+        font-size: 3rem;
+    }
+
+    .pos-abs-badge {
+        position: static;
+        margin-top: 20px;
+        box-shadow: none !important;
+        border: 1px solid var(--border-color);
+    }
+
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-img-box {
+        margin-top: 30px;
+    }
+
+    .p-5 {
+        padding: 2rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .display-3 {
+        font-size: 2.5rem;
+    }
+
+    .step-num {
+        font-size: 3rem;
+    }
+
+    .display-5 {
+        font-size: 2rem;
+    }
+
+    .listing-form-section .p-5 {
+        padding: 1.5rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .header .btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .hero-section .btn-lg {
+        width: 100%;
+    }
+}

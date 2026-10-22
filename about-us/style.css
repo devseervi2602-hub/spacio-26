@@ -1,0 +1,101 @@
+:root {
+    --danger: #ea2e2e;
+    --dark: #12132d;
+    --gray-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+.header .logo span {
+    letter-spacing: -1px;
+}
+
+.nav-links a.active {
+    color: var(--danger) !important;
+}
+
+/* Hero Section */
+.hero-banner {
+    background: transparent;
+}
+
+.hero-banner h1 {
+    font-size: 3.5rem;
+    color: #333;
+}
+
+/* Mission Section */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.mission-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #555;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Stats */
+.stat-card {
+    background: white;
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h3 {
+    font-size: 1.8rem;
+}
+
+/* Team */
+.member img {
+    border: 3px solid white;
+}
+
+/* Culture */
+.culture h2 {
+    font-size: 2.5rem;
+}
+
+/* Footer Links */
+.footer-links a:hover {
+    opacity: 1 !important;
+    color: var(--danger) !important;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .hero-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .mission-subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-banner h1 {
+        font-size: 2rem;
+    }
+}

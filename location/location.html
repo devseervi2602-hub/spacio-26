@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Spaces in India | Spacio</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="sticky-top bg-white py-3 border-bottom">
+        <div class="container-fluid px-lg-5">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- Logo -->
+                <a href="../index.html" class="navbar-brand fw-bold fs-3 text-dark">
+                    <span class="text-danger">SPACIO</span>
+                </a>
+
+                <!-- Search Bar (Desktop only) -->
+                <div class="d-none d-lg-block flex-grow-1 mx-4">
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-0">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="text" class="form-control bg-light border-0" placeholder="Search for a location" />
+                    </div>
+                </div>
+
+                <!-- Desktop Buttons -->
+                <div class="d-none d-lg-flex gap-2">
+                    <a href="location.html" class="btn btn-outline-dark py-2">Location</a>
+                    <a href="../listSPace/list.html" class="btn btn-outline-dark py-2">List Your Space</a>
+                    <a href="../contact us/contact.html" class="btn btn-outline-dark py-2">Contact Us</a>
+                    <a href="../about-us/about.html" class="btn btn-outline-dark py-2">About Us</a>
+                </div>
+
+                <!-- Mobile Hamburger -->
+                <div class="d-lg-none">
+                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offcanvas Mobile Menu -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title fw-bold">SPACIO</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column">
+                <a href="location.html" class="btn btn-dark mb-2">Location</a>
+                <a href="../listSPace/list.html" class="btn btn-outline-dark mb-2">List Your Space</a>
+                <a href="../contact us/contact.html" class="btn btn-outline-dark mb-2">Contact Us</a>
+                <a href="../about-us/about.html" class="btn btn-outline-dark mb-2">About Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-split section-reveal">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-6 hero-content d-flex align-items-center bg-light">
+                    <div class="p-5 p-lg-5 w-100">
+                        <h1 class="display-4 fw-bold mb-4">Office Spaces <br><span class="text-danger">in India</span>
+                        </h1>
+                        <p class="lead text-muted mb-4">Find the perfect workspace for your business across India's most
+                            vibrant cities. From coworking hubs in Bengaluru to corporate offices in Gurgaon, we help
+                            you find the ideal environment to grow.</p>
+                        <div class="d-flex gap-3">
+                            <a href="#listings" class="btn btn-danger btn-lg rounded-pill px-4">Explore Listings</a>
+                            <a href="../listSPace/list.html" class="btn btn-outline-dark btn-lg rounded-pill px-4">List
+                                Your Office</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image-container">
+                    <div class="hero-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200');">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Cities Section -->
+    <section class="popular-cities py-5 border-bottom section-reveal">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="fw-bold mb-0">Popular Cities</h4>
+                <div class="city-pills d-flex gap-2">
+                    <span class="badge rounded-pill bg-danger-subtle text-danger px-3 py-2 cursor-pointer">Mumbai</span>
+                    <span class="badge rounded-pill bg-light text-dark border px-3 py-2 cursor-pointer">Delhi</span>
+                    <span class="badge rounded-pill bg-light text-dark border px-3 py-2 cursor-pointer">Bengaluru</span>
+                    <span class="badge rounded-pill bg-light text-dark border px-3 py-2 cursor-pointer">Pune</span>
+                    <span class="badge rounded-pill bg-light text-dark border px-3 py-2 cursor-pointer">Hyderabad</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section id="listings" class="listings-section py-5 bg-white">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Sidebar Filters (30%) -->
+                <div class="col-lg-3">
+                    <div class="sidebar-filters  p-4 border rounded-4 bg-light" style="top: 100px;">
+                        <h5 class=" fw-bold mb-4">Filters</h5>
+
+                        <!-- Filter: Area -->
+                        <div class="filter-group mb-4">
+                            <h6 class="fw-bold mb-3 small text-uppercase opacity-75">Area Range (sq. ft)</h6>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="area1">
+                                <label class="form-check-label" for="area1">Under 1,000</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="area2">
+                                <label class="form-check-label" for="area2">1,000 - 5,000</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="area3">
+                                <label class="form-check-label" for="area3">5,000 - 10,000</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="area4">
+                                <label class="form-check-label" for="area4">10,000+</label>
+                            </div>
+                        </div>
+
+                        <!-- Filter: Space Type -->
+                        <div class="filter-group mb-4">
+                            <h6 class="fw-bold mb-3 small text-uppercase opacity-75">Space Type</h6>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="type1">
+                                <label class="form-check-label" for="type1">Private Office</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="type2">
+                                <label class="form-check-label" for="type2">Coworking Desk</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="type3">
+                                <label class="form-check-label" for="type3">Meeting Room</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="type4">
+                                <label class="form-check-label" for="type4">Virtual Office</label>
+                            </div>
+                        </div>
+
+                        <!-- Filter: Cities -->
+                        <div class="filter-group mb-4">
+                            <h6 class="fw-bold mb-3 small text-uppercase opacity-75">Cities</h6>
+                            <select class="form-select border-0 shadow-sm rounded-3">
+                                <option selected disabled>Select City</option>
+                                <option>Mumbai</option>
+                                <option>Bengaluru</option>
+                                <option>Delhi NCR</option>
+                                <option>Pune</option>
+                                <option>Hyderabad</option>
+                                <option>Chennai</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-danger w-100 rounded-pill py-2 mt-2">Apply Filters</button>
+                    </div>
+                </div>
+
+                <!-- Listings (70%) -->
+                <div class="col-lg-9">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class="mb-0 text-muted">Showing <strong>24</strong> workspace results</p>
+                        <div class="dropdown">
+                            <button class="btn btn-light border dropdown-toggle rounded-pill px-3" type="button"
+                                data-bs-toggle="dropdown">
+                                Sort by: Recommended
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+                        <!-- Listing Card 1 -->
+                        <div class="col-md-6 listing-card section-reveal">
+                            <div class="card h-100 border rounded-4 overflow-hidden shadow-sm hover-shadow">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=800"
+                                        class="card-img-top" alt="Office 1">
+                                    <span
+                                        class="badge bg-danger position-absolute top-0 start-0 m-3 rounded-pill px-3 py-2">Premium</span>
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="fw-bold mb-0">Skyline Business Hub</h5>
+                                        <div class="text-warning small"><i class="fas fa-star"></i> 4.8</div>
+                                    </div>
+                                    <p class="text-muted small mb-3"><i
+                                            class="fas fa-map-marker-alt text-danger me-1"></i> BKC, Mumbai</p>
+                                    <div class="d-flex gap-2 mb-4">
+                                        <span class="badge bg-light text-dark border">Wi-Fi</span>
+                                        <span class="badge bg-light text-dark border">AC</span>
+                                        <span class="badge bg-light text-dark border">Cafeteria</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                                        <div>
+                                            <small class="text-muted d-block">Starting from</small>
+                                            <span class="fw-bold fs-5 text-danger">₹15,000</span><small
+                                                class="text-muted">/mo</small>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-danger rounded-pill px-4">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Listing Card 2 -->
+                        <div class="col-md-6 listing-card section-reveal">
+                            <div class="card h-100 border rounded-4 overflow-hidden shadow-sm hover-shadow">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&q=80&w=800"
+                                        class="card-img-top" alt="Office 2">
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="fw-bold mb-0">Tech Garden Coworking</h5>
+                                        <div class="text-warning small"><i class="fas fa-star"></i> 4.5</div>
+                                    </div>
+                                    <p class="text-muted small mb-3"><i
+                                            class="fas fa-map-marker-alt text-danger me-1"></i> Indiranagar, Bengaluru
+                                    </p>
+                                    <div class="d-flex gap-2 mb-4">
+                                        <span class="badge bg-light text-dark border">24/7 Access</span>
+                                        <span class="badge bg-light text-dark border">Printing</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                                        <div>
+                                            <small class="text-muted d-block">Starting from</small>
+                                            <span class="fw-bold fs-5 text-danger">₹8,500</span><small
+                                                class="text-muted">/mo</small>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-danger rounded-pill px-4">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Listing Card 3 -->
+                        <div class="col-md-6 listing-card section-reveal">
+                            <div class="card h-100 border rounded-4 overflow-hidden shadow-sm hover-shadow">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800"
+                                        class="card-img-top" alt="Office 3">
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="fw-bold mb-0">Cyber City Suites</h5>
+                                        <div class="text-warning small"><i class="fas fa-star"></i> 4.9</div>
+                                    </div>
+                                    <p class="text-muted small mb-3"><i
+                                            class="fas fa-map-marker-alt text-danger me-1"></i> Gurgaon, Delhi NCR</p>
+                                    <div class="d-flex gap-2 mb-4">
+                                        <span class="badge bg-light text-dark border">AC</span>
+                                        <span class="badge bg-light text-dark border">Meeting Rms</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                                        <div>
+                                            <small class="text-muted d-block">Starting from</small>
+                                            <span class="fw-bold fs-5 text-danger">₹22,000</span><small
+                                                class="text-muted">/mo</small>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-danger rounded-pill px-4">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Listing Card 4 -->
+                        <div class="col-md-6 listing-card section-reveal">
+                            <div class="card h-100 border rounded-4 overflow-hidden shadow-sm hover-shadow">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=800"
+                                        class="card-img-top" alt="Office 4">
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="fw-bold mb-0">Pearl Valley Offices</h5>
+                                        <div class="text-warning small"><i class="fas fa-star"></i> 4.6</div>
+                                    </div>
+                                    <p class="text-muted small mb-3"><i
+                                            class="fas fa-map-marker-alt text-danger me-1"></i> HITEC City, Hyderabad
+                                    </p>
+                                    <div class="d-flex gap-2 mb-4">
+                                        <span class="badge bg-light text-dark border">Parking</span>
+                                        <span class="badge bg-light text-dark border">Gym</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                                        <div>
+                                            <small class="text-muted d-block">Starting from</small>
+                                            <span class="fw-bold fs-5 text-danger">₹12,000</span><small
+                                                class="text-muted">/mo</small>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-danger rounded-pill px-4">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link rounded-circle mx-1" href="#"><i
+                                        class="fas fa-chevron-left"></i></a></li>
+                            <li class="page-item active"><a
+                                    class="page-link rounded-circle mx-1 bg-danger border-danger" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link rounded-circle mx-1 text-dark" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link rounded-circle mx-1 text-dark" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link rounded-circle mx-1 text-dark" href="#"><i
+                                        class="fas fa-chevron-right"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer py-5 text-white" style="background-color: #030522;">
+        <div class="container py-lg-4">
+
+
+            <hr class="border-white opacity-25 mb-5">
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-2 col-6">
+                    <h6 class="fw-bold mb-4">SPACIO</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="../listSPace/list.html" class="text-white opacity-75 text-decoration-none">List
+                                Your Office</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h6 class="fw-bold mb-4">Support</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#" class="text-white opacity-75 text-decoration-none">Help Centre</a></li>
+                        <li><a href="../contact us/contact.html"
+                                class="text-white opacity-75 text-decoration-none">Contact support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-8 col-12 text-md-end">
+                    <h6 class="fw-bold mb-4">Connect With Us</h6>
+                    <div class="d-flex gap-3 justify-content-md-end">
+                        <a href="https://www.linkedin.com/" class="text-white fs-4"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/" class="text-white fs-4"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-white opacity-25 mb-4">
+
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-4 small opacity-75">
+                <span>© 2026 SPACIO Global. All Rights Reserved.</span>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white text-decoration-none">Terms of Use</a>
+                    <a href="#" class="text-white text-decoration-none">Privacy Statement</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

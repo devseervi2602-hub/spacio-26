@@ -1,0 +1,158 @@
+/* Mobile Responsive Adjustments */
+@media (max-width: 991px) {
+    .header-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #aa {
+        display: none;
+    }
+
+    .search-box-card {
+        margin-bottom: 30px;
+    }
+
+    .collage-grid {
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .collage-item {
+        height: 200px !important;
+        margin-top: 0 !important;
+    }
+
+    #spacio {
+        align-items: center;
+    }
+
+    #abc {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-title {
+        font-size: 2rem;
+    }
+
+    #aa {
+        display: none;
+    }
+
+    #spacio {
+        align-items: center;
+    }
+
+    .workspace-tabs {
+        justify-content: center;
+    }
+
+    .time-options {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+
+    #abc {
+        display: none;
+    }
+
+    .time-options .border-start {
+        border-start: 0 !important;
+        border-top: 1px solid #eee;
+        padding-top: 10px;
+        padding-left: 0 !important;
+    }
+
+    .collage-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-item {
+        font-size: 0.9rem;
+    }
+
+    .footer-search {
+        flex-direction: column;
+        padding: 10px !important;
+    }
+
+    .footer-search select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-search button {
+        width: 100%;
+    }
+
+    .display-4 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Custom Scroll for Subnav */
+.scroll-x {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+@media (max-width: 767px) {
+    .map-pin {
+        display: none;
+    }
+
+    #aa {
+        display: none;
+    }
+
+    #spacio {
+        align-items: center;
+    }
+
+    #abc {
+        display: none;
+    }
+
+    .map-container {
+        height: auto;
+    }
+
+    .city-card {
+        padding: 10px;
+    }
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    /* Optional: limit width */
+    margin: 0 auto;
+}
+
+.map-pin {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    /* Center pin based on top/left */
+    transition: all 0.3s ease;
+}
+
+/* Optional: make pins smaller on mobile */
+@media (max-width: 768px) {
+    .map-pin .pin-box {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .map-pin .pin-box {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.4rem;
+    }
+}

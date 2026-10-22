@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SPACIO</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+     <header class="sticky-top bg-white py-3 border-bottom">
+        <div class="container-fluid px-lg-5">
+            <div class="d-flex align-items-center justify-content-between">
+
+                <!-- Logo -->
+                <a href="../index.html" class="navbar-brand fw-bold fs-3 text-dark">
+                    <span class="text-danger">SPACIO</span>
+                </a>
+
+                <!-- Search Bar (Desktop only) -->
+                <div class="d-none d-lg-block flex-grow-1 mx-4">
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-0">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="text" class="form-control bg-light border-0" placeholder="Search for a location" />
+                    </div>
+                </div>
+
+                <!-- Desktop Buttons -->
+                <div class="d-none d-lg-flex gap-2">
+                    <a href="../location/location.html" class="btn btn-outline-dark py-2">Location</a>
+                    <a href="../listSPace/list.html" class="btn btn-outline-dark py-2">List Your Space</a>
+                    <a href="../contact us/contact.html" class="btn btn-outline-dark py-2">Contact Us</a>
+                    <a href="../about-us/about.html" class="btn btn-outline-dark py-2">About Us</a>
+                </div>
+
+                <!-- Mobile Hamburger -->
+                <div class="d-lg-none">
+                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Offcanvas Mobile Menu -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileMenuLabel">SPACIO</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column">
+                <a href="location/location.html" class="btn btn-outline-dark mb-2">Location</a>
+                <a href="#" class="btn btn-outline-dark mb-2">List Your Space</a>
+                <a href="contact us/contact.html" class="btn btn-outline-dark mb-2">Contact Us</a>
+                <a href="about-us/about.html" class="btn btn-outline-dark mb-2">About Us</a>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid p-0">
+        <div class="row g-0 vh-100">
+            <!-- Left Side: Image -->
+            <div class="col-lg-5 d-none d-lg-block bg-image">
+                <img src="https://images.unsplash.com/photo-1724681435399-972d668fade0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="w-100 h-100" alt="">
+            </div>
+
+            <!-- Right Side: Form -->
+            <div class="col-lg-7 d-flex align-items-center bg-white overflow-auto py-5 px-4 px-md-5">
+                <div class="contact-form-container mx-auto">
+                    <!-- Logo & Header -->
+                    <div class="mb-5">
+
+                        <h1 class="display-5 fw-bold text-dark mb-2">Let's Get In Touch.</h1>
+                        <p class="text-muted">Or just reach out manually to <a href="mailto:hello@spacio.com"
+                                class="text-red text-decoration-none fw-bold">hello@spacio.com</a>.</p>
+                    </div>
+
+                    <!-- Form -->
+                    <form id="contactForm">
+                        <div class="row g-4">
+                            <!-- Names -->
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">First Name</label>
+                                <div class="input-group-custom">
+                                    <i class="far fa-user"></i>
+                                    <input type="text" class="form-control" placeholder="Enter your first name..."
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Last Name</label>
+                                <div class="input-group-custom">
+                                    <i class="far fa-user"></i>
+                                    <input type="text" class="form-control" placeholder="Enter your last name..."
+                                        required>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-12">
+                                <label class="form-label fw-bold">Email Address</label>
+                                <div class="input-group-custom">
+                                    <i class="far fa-envelope"></i>
+                                    <input type="email" class="form-control" placeholder="Enter your email address..."
+                                        required>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="col-12">
+                                <label class="form-label fw-bold">Phone Number</label>
+                                <div class="phone-input-group d-flex align-items-center">
+                                    <div
+                                        class="country-select border rounded-start-pill py-2 px-3 d-flex align-items-center gap-2">
+                                        <img src="https://flagcdn.com/w20/gb.png" width="20" alt="UK">
+                                        <i class="fas fa-chevron-down small opacity-50"></i>
+                                    </div>
+                                    <input type="tel" class="form-control rounded-end-pill py-3 px-3"
+                                        placeholder="+44 (000) 000-0000">
+                                    <i class="far fa-question-circle ms-2 opacity-25"></i>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="col-12">
+                                <label class="form-label fw-bold">Message</label>
+                                <div class="textarea-container">
+                                    <textarea class="form-control" id="messageArea" rows="4"
+                                        placeholder="Enter your main text here..." maxlength="300"></textarea>
+                                    <div class="char-count text-end mt-2 small opacity-50">
+                                        <span id="currentChar">0</span>/300
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-primary w-100 py-3 rounded-pill fw-bold">
+                                    Submit Form <i class="fas fa-arrow-right ms-2"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

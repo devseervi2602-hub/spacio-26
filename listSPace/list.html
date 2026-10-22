@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Space | Spacio</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header sticky-top bg-white border-bottom py-3">
+        <div class="container-fluid px-lg-5">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="../index.html" class="navbar-brand fw-bold fs-3 text-dark">
+                    <span class="text-danger">SPACIO</span>
+                </a>
+                <div class="d-none d-lg-flex gap-2">
+                    <a href="../location/location.html" class="btn btn-outline-dark py-2">Location</a>
+                    <a href="list.html" class="btn btn-outline-dark py-2">List Your Space</a>
+                    <a href="../contact us/contact.html" class="btn btn-outline-dark py-2">Contact Us</a>
+                    <a href="../about-us/about.html" class="btn btn-outline-dark py-2">About Us</a>
+                </div>
+                <div class="d-lg-none">
+                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold">SPACIO</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <a href="../location/location.html" class="btn btn-outline-dark mb-2">Location</a>
+            <a href="list.html" class="btn btn-dark mb-2">List Your Space</a>
+            <a href="../contact us/contact.html" class="btn btn-outline-dark mb-2">Contact Us</a>
+            <a href="../about-us/about.html" class="btn btn-outline-dark mb-2">About Us</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5 d-flex align-items-center">
+        <div class="container py-lg-5 text-center text-lg-start">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 reveal">
+                    <h1 class="display-3 fw-bold mb-4">List Your Space <br><span class="text-danger">on Spacio</span>
+                    </h1>
+                    <p class="lead text-muted mb-5 pe-lg-5">Maximize your workspace's potential. Join thousands of hosts
+                        turning empty offices, halls, and land into thriving income streams.</p>
+                    <a href="#list-form" class="btn btn-danger btn-lg rounded-pill px-5 py-3 shadow-lg">Start Listing
+                        Now</a>
+                </div>
+                <div class="col-lg-6 reveal">
+                    <div class="hero-img-box position-relative">
+                        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200"
+                            class="img-fluid rounded-4 shadow-2xl" alt="Workspace">
+                        <div class="stat-badge bg-white p-3 rounded-4 shadow pos-abs-badge">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="icon-circle bg-success text-white"><i class="fas fa-check"></i></div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Verified Hosts</h6>
+                                    <small class="text-muted">Join 5000+ experts</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section py-5 bg-light">
+        <div class="container py-lg-5">
+            <div class="text-center mb-5 reveal">
+                <h6 class="text-danger fw-bold text-uppercase mb-2">Why Host With Us?</h6>
+                <h2 class="display-5 fw-bold">Turn Underused Space <br>Into Revenue</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 reveal">
+                    <div class="benefit-card p-5 bg-white rounded-4 border h-100 transition-up">
+                        <div class="icon-box-lg bg-pink text-danger mb-4"><i class="fas fa-chart-line"></i></div>
+                        <h4 class="fw-bold mb-3">Reach More Tenants</h4>
+                        <p class="text-muted">Our global network exposes your space to thousands of companies and event
+                            planners daily.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal">
+                    <div class="benefit-card p-5 bg-white rounded-4 border h-100 transition-up">
+                        <div class="icon-box-lg bg-cyan text-info mb-4"><i class="fas fa-shield-alt"></i></div>
+                        <h4 class="fw-bold mb-3">Secure Payments</h4>
+                        <p class="text-muted">Forget chasing invoices. Our platform handles all transactions safely and
+                            on time.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal">
+                    <div class="benefit-card p-5 bg-white rounded-4 border h-100 transition-up">
+                        <div class="icon-box-lg bg-purple-light text-purple mb-4"><i class="fas fa-tools"></i></div>
+                        <h4 class="fw-bold mb-3">Management Tools</h4>
+                        <p class="text-muted">Powerful booking dashboards, automated calendars, and seamless tenant
+                            messaging.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Space Types Section -->
+    <section class="space-types py-5">
+        <div class="container py-lg-5">
+            <div class="text-center mb-5 reveal">
+                <h2 class="display-5 fw-bold">Spaces You Can List</h2>
+                <p class="text-muted">If you have the space, we have the tenants.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="type-card rounded-4 overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=800"
+                            class="img-fluid" alt="Office">
+                        <div class="type-content p-4 text-white">
+                            <h4 class="fw-bold mb-0">Office Spaces</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="type-card rounded-4 overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&q=80&w=800"
+                            class="img-fluid" alt="Coworking">
+                        <div class="type-content p-4 text-white">
+                            <h4 class="fw-bold mb-0">Coworking Desks</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="type-card rounded-4 overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&q=80&w=800"
+                            class="img-fluid" alt="Meeting">
+                        <div class="type-content p-4 text-white">
+                            <h4 class="fw-bold mb-0">Meeting Rooms</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="type-card rounded-4 overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=800"
+                            class="img-fluid" alt="Event">
+                        <div class="type-content p-4 text-white">
+                            <h4 class="fw-bold mb-0">Event Halls</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="type-card rounded-4 overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=800"
+                            class="img-fluid" alt="Virtual">
+                        <div class="type-content p-4 text-white">
+                            <h4 class="fw-bold mb-0">Virtual Offices</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="type-card rounded-4 overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&q=80&w=800"
+                            class="img-fluid" alt="Land">
+                        <div class="type-content p-4 text-white">
+                            <h4 class="fw-bold mb-0">Open Land</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works py-5 bg-dark text-white">
+        <div class="container py-lg-5">
+            <div class="text-center mb-5 reveal">
+                <h2 class="display-5 fw-bold">Simple 3-Step Process</h2>
+            </div>
+            <div class="row text-center g-5">
+                <div class="col-md-4 reveal">
+                    <div class="step-num text-danger mb-4">01</div>
+                    <h4 class="fw-bold mb-3">Create Profile</h4>
+                    <p class="opacity-75">Upload photos, set pricing, and describe your space's highlights.</p>
+                </div>
+                <div class="col-md-4 reveal">
+                    <div class="step-num text-danger mb-4">02</div>
+                    <h4 class="fw-bold mb-3">Accept Bookings</h4>
+                    <p class="opacity-75">Chat with potential tenants and confirm bookings with one click.</p>
+                </div>
+                <div class="col-md-4 reveal">
+                    <div class="step-num text-danger mb-4">03</div>
+                    <h4 class="fw-bold mb-3">Start Earning</h4>
+                    <p class="opacity-75">Receive payments directly to your bank account twice a month.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Listing Form Section -->
+    <section id="list-form" class="listing-form-section py-5">
+        <div class="container py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 reveal">
+                    <div class="bg-white p-5 rounded-4 shadow-2xl border">
+                        <h2 class="fw-bold mb-4 text-center">List Your Space Details</h2>
+                        <form id="spaceListingForm">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Space Name</label>
+                                    <input type="text" class="form-control rounded-pill py-3 px-4"
+                                        placeholder="e.g. Modern Tech Hub" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Space Type</label>
+                                    <select class="form-select rounded-pill py-3 px-4" required>
+                                        <option value="">Select Type</option>
+                                        <option>Private Office</option>
+                                        <option>Coworking Space</option>
+                                        <option>Meeting Room</option>
+                                        <option>Event Hall</option>
+                                        <option>Virtual Office</option>
+                                        <option>Open Land</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-bold">Description</label>
+                                    <textarea class="form-control rounded-4 py-3 px-4" rows="4"
+                                        placeholder="What makes your space special?" required></textarea>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Location</label>
+                                    <input type="text" class="form-control rounded-pill py-3 px-4"
+                                        placeholder="Full Address" required>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label fw-bold">Capacity</label>
+                                    <input type="number" class="form-control rounded-pill py-3 px-4"
+                                        placeholder="People" required>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label fw-bold">Pricing (₹/month)</label>
+                                    <input type="number" class="form-control rounded-pill py-3 px-4"
+                                        placeholder="Monthly Fee" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-bold">Upload Photos</label>
+                                    <div class="upload-area rounded-4 p-5 text-center border-dashed position-relative">
+                                        <input type="file" class="file-input" multiple>
+                                        <i class="fas fa-cloud-upload-alt text-danger fs-1 mb-3"></i>
+                                        <h5 class="fw-bold">Drag & Drop Photos</h5>
+                                        <p class="text-muted mb-0">or click to browse from device</p>
+                                        <div id="imagePreview"
+                                            class="d-flex flex-wrap gap-2 mt-4 justify-content-center"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-5">
+                                    <button type="submit"
+                                        class="btn btn-danger btn-lg w-100 rounded-pill py-3 fw-bold transition-all shadow-lg"
+                                        id="submitBtn">
+                                        Submit Listing <i class="fas fa-arrow-right ms-2 mt-1"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer py-5 bg-dark text-white border-top border-secondary">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="fw-bold mb-4 text-danger">Spacio</h4>
+                    <p class="opacity-75">Transforming how people find and list workspaces. Join our community of hosts
+                        and professionals today.</p>
+                    <div class="d-flex gap-3">
+                        <a href="https://www.facebook.com/Spacio-106429252462569"
+                            class="text-white opacity-75 hover-danger" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/Spacio_106429252462569" class="text-white opacity-75 hover-danger"
+                            target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/spacio_106429252462569/"
+                            class="text-white opacity-75 hover-danger" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/spacio-106429252462569/"
+                            class="text-white opacity-75 hover-danger"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-4">Quick Links</h5>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Browse Spaces</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">How it Works</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">List Your Space</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-4">Support</h5>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Help Center</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Safety</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-4">Newsletter</h5>
+                    <p class="opacity-75 mb-4">Stay updated with the latest workspace trends.</p>
+                    <div class="input-group">
+                        <input type="email"
+                            class="form-control bg-transparent text-white border-secondary rounded-start-pill px-4"
+                            placeholder="Your Email">
+                        <button class="btn btn-danger rounded-end-pill px-4">Join</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center opacity-50">
+                <p class="mb-0">&copy; 2023 SpaceFinder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

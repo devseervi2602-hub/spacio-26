@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | SPACIO</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        type="text/css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <!-- Header -->
+     <header class="sticky-top bg-white py-3 border-bottom">
+        <div class="container-fluid px-lg-5">
+            <div class="d-flex align-items-center justify-content-between">
+
+                <!-- Logo -->
+                <a href="../index.html" class="navbar-brand fw-bold fs-3 text-dark">
+                    <span class="text-danger">SPACIO</span>
+                </a>
+
+                <!-- Search Bar (Desktop only) -->
+                <div class="d-none d-lg-block flex-grow-1 mx-4">
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-0">
+                           
+                        </span>
+                        <input type="text" class="form-control bg-light border-0" placeholder="Search for a location" />
+                    </div>
+                </div>
+
+                <!-- Desktop Buttons -->
+                <div class="d-none d-lg-flex gap-2">
+                    <a href="../location/location.html" class="btn btn-outline-dark py-2">Location</a>
+                    <a href="../listSPace/list.html" class="btn btn-outline-dark py-2">List Your Space</a>
+                    <a href="../contact us/contact.html" class="btn btn-outline-dark py-2">Contact Us</a>
+                    <a href="../about-us/about.html" class="btn btn-outline-dark py-2">About Us</a>
+                </div>
+
+                <!-- Mobile Hamburger -->
+                <div class="d-lg-none">
+                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Offcanvas Mobile Menu -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileMenuLabel">SPACIO</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column">
+                <a href="location/location.html" class="btn btn-outline-dark mb-2">Location</a>
+                <a href="#" class="btn btn-outline-dark mb-2">List Your Space</a>
+                <a href="contact us/contact.html" class="btn btn-outline-dark mb-2">Contact Us</a>
+                <a href="about-us/about.html" class="btn btn-outline-dark mb-2">About Us</a>
+            </div>
+        </div>
+    </header>'
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold">SPACIO</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+            <ul class="list-unstyled">
+                <li><a href="#" class="d-block p-3 text-dark text-decoration-none border-bottom">Locations</a></li>
+                <li><a href="E:\Tarun\spacio\about-us\about.html"
+                        class="d-block p-3 text-dark text-decoration-none border-bottom bg-light">About
+                        us</a></li>
+                <li><a href="E:\Tarun\spacio\contact us\contact.html"
+                        class="d-block p-3 text-dark text-decoration-none border-bottom">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-banner py-5 text-center mt-5 text-white"
+        style="background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2070') center/cover no-repeat;">
+        <div class="container py-lg-4">
+            <h1 class="display-5 fw-bold mb-4 text-white">The Future of Work has Arrived</h1>
+            <p class="lead opacity-75">Book it on <span class="text-danger fw-bold">SPACIO.com</span></p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-4">Our Mission</h2>
+            <h3 class="mission-subtitle mb-4">To accelerate the global workforce adoption of coworking through
+                discovery, bookings, and frictionless access.</h3>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <p class="mission-text text-muted mb-4">
+                        We believe when people access inspiring and collaborative workspaces, good things happen. In
+                        2015, Coworker was founded in order to help accelerate the adoption of coworking, by enabling
+                        the discovery of coworking spaces around the world. We envision a future where on-demand access
+                        to flexible workspace enables 1 billion people to participate in coworking annually. We believe
+                        this event will drive innovation and society forward, faster. Every day we work towards
+                        developing our technology and network to support this bright future that we will all share.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-5 bg-light">
+        <div class="container py-lg-4">
+            <h2 class="text-center fw-bold mb-5">SPACIO at a Glance</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4 col-sm-6">
+                    <div class="stat-card p-4 h-100">
+                        <h3 class="fw-bold fs-2 mb-2 text-danger">3,000,000 Users</h3>
+                        <p class="small text-muted">More than 200,000 people use SPACIO each month to find and book
+                            coworking spaces.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="stat-card p-4 h-100">
+                        <h3 class="fw-bold fs-2 mb-2 text-danger">25,000+ Spaces</h3>
+                        <p class="small text-muted">Our marketplace holds the largest network of verified coworking
+                            spaces globally, with more than 300 new spaces joining each month.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="stat-card p-4 h-100">
+                        <h3 class="fw-bold fs-2 mb-2 text-danger">12 Locations</h3>
+                        <p class="small text-muted">Our team and offices span 12 wonderful locations around the world
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="stat-card p-4 h-100">
+                        <h3 class="fw-bold fs-2 mb-2 text-danger">172 Countries</h3>
+                        <p class="small text-muted">Coworking is truly global, and our network continues to expand every
+                            month by welcoming spaces in new cities and countries.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="stat-card p-4 h-100">
+                        <h3 class="fw-bold fs-2 mb-2 text-danger">24/7 Service</h3>
+                        <p class="small text-muted">When it comes to customer service, we raise the bar with an
+                            around-the-clock access team of coworking experts to answer any inquiries.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="stat-card p-4 h-100">
+                        <h3 class="fw-bold fs-2 mb-2 text-danger">CMCA’s</h3>
+                        <p class="small text-muted">The Coworker Members’ Choice Awards recognize the top coworking
+                            spaces in every city around the world based on thousands of votes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Experts Section -->
+    <section class="global-experts py-5">
+        <div class="container text-center py-lg-4">
+            <h2 class="fw-bold mb-4">Global Experts & Offices</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="text-muted mb-4">Our globally distributed team allows us to maintain operational
+                        efficiency and provide 24/7 customer service while working toward a shared goal. In order to
+                        know the world, one must see the world. Our team has now visited coworking spaces in more than
+                        100 countries.</p>
+                </div>
+            </div>
+            <div class="team-img-placeholder my-4">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1200"
+                    alt="Team" class="img-fluid rounded shadow-sm">
+            </div>
+        </div>
+    </section>
+
+    <!-- Management Section -->
+    <section class="management py-5 bg-white">
+        <div class="container py-lg-4">
+            <h2 class="text-center fw-bold mb-5">Management</h2>
+            <div class="row g-4 text-center justify-content-center">
+
+                <div class="col-md-2 col-sm-4">
+                    <div class="member">
+                        <img src="https://i0.wp.com/raiagroup.org/wp-content/uploads/2019/12/Narendra-Modi.png?resize=300%2C300&ssl=1e" class="rounded-circle mb-3 shadow-sm" width="100"
+                            height="100" alt="Graeme">
+                        <h6 class="fw-bold mb-0">Modi ji</h6>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="member">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg/500px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg" class="rounded-circle mb-3 shadow-sm" width="100"
+                            height="100" alt="Faye">
+                        <h6 class="fw-bold mb-0">Trump</h6>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="member">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Shri_Amit_Shah_in_Raigad.jpg/500px-Shri_Amit_Shah_in_Raigad.jpg" class="rounded-circle mb-3 shadow-sm" width="100"
+                            height="100" alt="Rob">
+                        <h6 class="fw-bold mb-0">Shah</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section class="culture py-5 bg-light">
+        <div class="container text-center py-lg-4">
+            <h2 class="fw-bold mb-4">Our Culture</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="text-muted mb-5">At SPACIO, we believe coworking embodies the future of work. We strive to
+                        provide a platform that allows this thriving industry to connect and flourish. As coworking
+                        members, our team is excited to help people join communities that will take their lives and
+                        businesses to the next level.</p>
+                    <a href="#" class="btn btn-danger btn-lg px-5 rounded-pill shadow-sm py-3">Join the Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

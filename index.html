@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacio | Office Workspace Solutions in India</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="sticky-top bg-white py-3 border-bottom">
+        <div class="container-fluid px-lg-5">
+            <div class="d-flex align-items-center justify-content-between">
+
+                <!-- Logo -->
+                <a href="#" class="navbar-brand fw-bold fs-3 text-dark">
+                    <span class="text-danger">SPACIO</span>
+                </a>
+
+                <!-- Search Bar (Desktop only) -->
+                <div class="d-none d-lg-block flex-grow-1 mx-4">
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-0">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="text" class="form-control bg-light border-0" placeholder="Search for a location" />
+                    </div>
+                </div>
+
+                <!-- Desktop Buttons -->
+                <div class="d-none d-lg-flex gap-2">
+                    <a href="location/location.html" class="btn btn-outline-dark py-2">Location</a>
+                    <a href="listSPace/list.html" class="btn btn-outline-dark py-2">List Your Space</a>
+                    <a href="contact us/contact.html" class="btn btn-outline-dark py-2">Contact Us</a>
+                    <a href="about-us/about.html" class="btn btn-outline-dark py-2">About Us</a>
+                </div>
+
+                <!-- Mobile Hamburger -->
+                <div class="d-lg-none">
+                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Offcanvas Mobile Menu -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileMenuLabel">SPACIO</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column">
+                <a href="location/location.html" class="btn btn-outline-dark mb-2">Location</a>
+                <a href="#" class="btn btn-outline-dark mb-2">List Your Space</a>
+                <a href="contact us/contact.html" class="btn btn-outline-dark mb-2">Contact Us</a>
+                <a href="about-us/about.html" class="btn btn-outline-dark mb-2">About Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <!-- Sub Navigation -->
+    <nav class="sub-nav py-3 border-bottom scroll-x">
+        <div class="container-fluid px-lg-5 d-flex justify-content-between align-items-center">
+            <div class="nav-item-icon text-center">
+                <i class="fas fa-building d-block mb-1"></i>
+                <span>Office Space</span>
+            </div>
+            <div class="nav-item-icon text-center">
+                <i class="fas fa-users d-block mb-1"></i>
+                <span>Coworking</span>
+            </div>
+            <div class="nav-item-icon text-center">
+                <i class="fas fa-laptop d-block mb-1"></i>
+                <span>Virtual Offices</span>
+            </div>
+            <div class="nav-item-icon text-center">
+                <i class="fas fa-handshake d-block mb-1"></i>
+                <span>Meeting Rooms</span>
+            </div>
+            <div class="nav-item-icon text-center">
+                <i class="fas fa-id-card d-block mb-1"></i>
+                <span>Membership</span>
+            </div>
+            <div class="nav-item-icon text-center">
+                <i class="fas fa-map-marker-alt d-block mb-1"></i>
+                <span>Business Address</span>
+            </div>
+            <div class="nav-item-icon text-center d-none d-md-block">
+                <i class="fas fa-phone-square-alt d-block mb-1"></i>
+                <span>Telephone Answering</span>
+            </div>
+            <div class="nav-item-icon text-center d-none d-md-block">
+                <i class="fas fa-calendar-alt d-block mb-1"></i>
+                <span>Event Space</span>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+        <div class="container-fluid px-lg-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-5 mt-4 header-title">Find amazing workspaces for your team to thrive
+                    </h1>
+
+                    <div class="search-box-card shadow-lg p-4 rounded-4 bg-white">
+                        <h5 class="fw-bold mb-4">Search workspaces</h5>
+                        <div class="workspace-tabs d-flex flex-wrap gap-2 mb-4">
+                            <button class="btn btn-outline-dark rounded-pill px-4 py-2 active-tab"
+                                data-type="private">Private offices</button>
+                            <button class="btn btn-outline-dark rounded-pill px-4 py-2" data-type="meeting">Meeting
+                                rooms</button>
+                            <button class="btn btn-outline-dark rounded-pill px-4 py-2" data-type="coworking">Coworking
+                                desks</button>
+                            <!-- <button class="btn btn-outline-dark rounded-pill px-4 py-2" data-type="day">Day
+                                offices</button> -->
+                        </div>
+
+                        <div class="time-options d-flex gap-4 mb-4 p-3 bg-light rounded-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="timeType" id="fullTime" checked>
+                                <label class="form-check-label" for="fullTime">
+                                    Full time <small class="text-muted d-block">7 days / week</small>
+                                </label>
+                            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div class="form-check  ps-4">
+
+                                <input class="form-check-input" type="radio" name="timeType" id="partTime">
+                                <label class="form-check-label" for="partTime">
+                                    Part time <small class="text-muted d-block">1-3 days / week</small>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row g-2">
+                            <div class="col-md-9">
+                                <div class="input-group">
+                                    <input type="text" class="form-control py-3 border-secondary"
+                                        placeholder="Search by city or area">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-danger w-100 py-3 fw-bold rounded-pill shadow-danger">
+                                    <i class="fas fa-search me-2"></i> Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Market Stats -->
+                    <div class="row mt-5 text-center text-md-start">
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                                <div class="stat-content">
+                                    <h4 class="fw-bold mb-0">100%</h4>
+                                    <p class="text-muted small mb-0">Market coverage</p>
+                                </div>
+                                <i class="fas fa-star ms-2 text-dark"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div
+                                class="d-flex align-items-center justify-content-center justify-content-md-start border-start-md">
+                                <div class="stat-content px-md-3">
+                                    <h4 class="fw-bold mb-0">100%</h4>
+                                    <p class="text-muted small mb-0">Real listings</p>
+                                </div>
+                                <i class="fas fa-star ms-2 text-dark"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div
+                                class="d-flex align-items-center justify-content-center justify-content-md-start border-start-md">
+                                <div class="stat-content px-md-3">
+                                    <h4 class="fw-bold mb-0">Best price</h4>
+                                    <p class="text-muted small mb-0">Guarantee</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="collage-grid">
+                        <div class="collage-item collage-item-1">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80"
+                                alt="Workspace 1" class="img-fluid rounded-4 shadow">
+                        </div>
+                        <div class="collage-item collage-item-2">
+                            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=600&q=80"
+                                alt="Workspace 2" class="img-fluid rounded-4 shadow">
+                        </div>
+                        <div class="collage-item collage-item-3">
+                            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80"
+                                alt="Workspace 3" class="img-fluid rounded-4 shadow">
+                        </div>
+                        <div class="collage-item collage-item-4">
+                            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80"
+                                alt="Workspace 4" class="img-fluid rounded-4 shadow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workspace Categories -->
+    <section class="workspace-categories py-5 reveal">
+        <div class="container py-lg-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Any type of workspace for every type of work</h2>
+                <p class="text-muted">From private offices to on-demand space - Hubble is the leading workspace
+                    marketplace</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 category-card">
+                        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top rounded-top-4" alt="Private Offices">
+                        <div class="card-body">
+                            <span class="badge bg-info text-dark mb-2">1-24+ MONTH TERMS</span>
+                            <h5 class="fw-bold">Private Offices</h5>
+                            <p class="text-muted small">Entire offices to rent</p>
+                            <a href="#" class="text-danger fw-bold text-decoration-none">Search now <i
+                                    class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 category-card">
+                        <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top rounded-top-4" alt="Meeting Rooms">
+                        <div class="card-body">
+                            <span class="badge bg-info text-dark mb-2">BOOK HOURLY OR DAILY</span>
+                            <h5 class="fw-bold">Meeting Rooms</h5>
+                            <p class="text-muted small">Rooms to meet, plan, and present</p>
+                            <a href="#" class="text-danger fw-bold text-decoration-none">Search now <i
+                                    class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 category-card">
+                        <img src="https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top rounded-top-4" alt="Coworking Desks">
+                        <div class="card-body">
+                            <span class="badge bg-info text-dark mb-2">BOOK DAILY</span>
+                            <h5 class="fw-bold">Coworking Desks</h5>
+                            <p class="text-muted small">Desks in a shared workplace</p>
+                            <a href="#" class="text-danger fw-bold text-decoration-none">Search now <i
+                                    class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 category-card">
+                        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top rounded-top-4" alt="Day Offices">
+                        <div class="card-body">
+                            <span class="badge bg-info text-dark mb-2">BOOK DAILY</span>
+                            <h5 class="fw-bold">Day Offices</h5>
+                            <p class="text-muted small">Your team's very own office, just for the day</p>
+                            <a href="#" class="text-danger fw-bold text-decoration-none">Search now <i
+                                    class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Cities -->
+    <section class="top-cities py-5 reveal">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h3 class="fw-bold mb-0">Top Coworking Cities</h3>
+                    <p class="text-muted small mb-0">Search for coworking spaces in our most popular cities</p>
+                </div>
+                <a href="#" class="text-success fw-bold text-decoration-none">Search all cities <i
+                        class="fas fa-chevron-right ms-1"></i></a>
+            </div>
+            <div class="row g-3">
+                <!-- Row 1 -->
+                <div class="col-md-4">
+                    <div class="city-card d-flex align-items-center bg-white p-2 rounded-3 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=150&q=80"
+                            alt="London" class="rounded-2 me-3">
+                        <div>
+                            <h6 class="fw-bold mb-0">London</h6>
+                            <small class="text-muted">Coworking Spaces</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="city-card d-flex align-items-center bg-white p-2 rounded-3 shadow-sm">
+                        <img src="https://coworker.imgix.net/pictures%2FC26%2Fedit%2Findia-default.jpg?w=850&h=550&q=90&auto=format,compress&fit=crop&mark=/template/img/wm_icon.png&markscale=5&markalign=center,middle"
+                            alt="Bengaluru" class="rounded-2 me-3">
+                        <div>
+                            <h6 class="fw-bold mb-0">Bengaluru</h6>
+                            <small class="text-muted">Coworking Spaces</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="city-card d-flex align-items-center bg-white p-2 rounded-3 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=150&q=80"
+                            alt="New York City" class="rounded-2 me-3">
+                        <div>
+                            <h6 class="fw-bold mb-0">New York City</h6>
+                            <small class="text-muted">Coworking Spaces</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="col-md-4">
+                    <div class="city-card d-flex align-items-center bg-white p-2 rounded-3 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?auto=format&fit=crop&w=150&q=80"
+                            alt="Mexico City" class="rounded-2 me-3">
+                        <div>
+                            <h6 class="fw-bold mb-0">Mexico City</h6>
+                            <small class="text-muted">Coworking Spaces</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="city-card d-flex align-items-center bg-white p-2 rounded-3 shadow-sm">
+                        <img src="https://coworker.imgix.net/pictures%2FC48%2Fedit%2Fjakarta-coworking.jpeg?w=850&h=550&q=90&auto=format,compress&fit=crop&mark=/template/img/wm_icon.png&markscale=5&markalign=center,middle0"
+                            alt="Jakarta" class="rounded-2 me-3">
+                        <div>
+                            <h6 class="fw-bold mb-0">Jakarta</h6>
+                            <small class="text-muted">Coworking Spaces</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="city-card d-flex align-items-center bg-white p-2 rounded-3 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=150&q=80"
+                            alt="Tokyo" class="rounded-2 me-3">
+                        <div>
+                            <h6 class="fw-bold mb-0">Tokyo</h6>
+                            <small class="text-muted">Coworking Spaces</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- World Map Section -->
+    <section class="world-map py-5 bg-white reveal " id="abc">
+        <div class="container text-center mb-5">
+            <h3 class="fw-bold">Find Flexible Office Space Anywhere.</h3>
+            <p class="text-muted">The World's Largest Network of Coworking Spaces</p>
+        </div>
+        <div class="map-container position-relative">
+            <img src="https://www.itasa.es/wp-content/uploads/2019/09/Itasa_worldwide-1.png" alt="World Map"
+                class="img-fluid map-img opacity-25 w-100" />
+
+            <!-- Map Pin Labels -->
+            <div class="map-pin pin-na" style="top: 25%; left: 20%;">
+                <div class="pin-box p-2 bg-white shadow rounded-2">
+                    <small class="fw-bold d-block">North America</small>
+                    <span class="text-info fs-7">7563 Spaces</span>
+                </div>
+            </div>
+
+            <div class="map-pin pin-eu" style="top: 25%; left: 45%;">
+                <div class="pin-box p-2 bg-white shadow rounded-2">
+                    <small class="fw-bold d-block">Europe</small>
+                    <span class="text-info fs-7">11113 Spaces</span>
+                </div>
+            </div>
+
+            <div class="map-pin pin-as" style="top: 35%; left: 65%;">
+                <div class="pin-box p-2 bg-white shadow rounded-2">
+                    <small class="fw-bold d-block">Asia</small>
+                    <span class="text-info fs-7">7929 Spaces</span>
+                </div>
+            </div>
+
+            <div class="map-pin pin-me" style="top: 45%; left: 52%;">
+                <div class="pin-box p-2 bg-white shadow rounded-2">
+                    <small class="fw-bold d-block">Middle East</small>
+                    <span class="text-info fs-7">835 Spaces</span>
+                </div>
+            </div>
+
+            <div class="map-pin pin-af" style="top: 65%; left: 48%;">
+                <div class="pin-box p-2 bg-white shadow rounded-2">
+                    <small class="fw-bold d-block">Africa</small>
+                    <span class="text-info fs-7">1366 Spaces</span>
+                </div>
+            </div>
+
+            <div class="map-pin pin-oc" style="top: 75%; left: 75%;">
+                <div class="pin-box p-2 bg-white shadow rounded-2">
+                    <small class="fw-bold d-block">Oceania</small>
+                    <span class="text-info fs-7">1014 Spaces</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Client Logos Section -->
+    <section class="client-logos py-5 bg-white reveal">
+        <div class="container py-lg-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3 color-dark">We’ve helped 1000s of forward thinking teams</h2>
+            </div>
+            <img src="Screenshot 2026-01-10 144423.png" alt="Client Logos" class="img-fluid w-100"
+                style="max-width: 1200px; margin: 0 auto; display: block;">
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer py-5 text-white">
+        <div class="container py-lg-4">
+            <!-- Top Footer: Trustpilot & Search -->
+            <div class="row align-items-center mb-5">
+                <!-- <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center flex-wrap gap-3">
+                        <div class="h-logo bg-danger rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px;">
+                            <span class="fw-bold">H</span>
+                        </div>
+                        <span class="fw-bold">Excellent</span>
+                        <div class="stars text-success">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="small opacity-75"><i class="fas fa-star text-success me-1"></i>Trustpilot</span>
+                    </div>
+                </div> -->
+                <div class="col-lg-6">
+                    <div class="footer-search d-flex align-items-center gap-2 bg-white rounded-2 p-1">
+                        <span class="ps-3 text-dark fw-bold d-none d-md-inline">Find a workspace</span>
+                        <select class="form-select border-0 text-dark" id="aa">
+                            <option>Private office</option>
+                            <option>Meeting room</option>
+                            <option>Coworking desk</option>
+                        </select>
+                        <button class="btn btn-primary bg-pink border-0 px-4 py-2 fw-bold">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-white opacity-25 mb-5">
+
+            <!-- Middle Footer: Links -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-2 col-6">
+                    <h6 class="fw-bold mb-4">SPACIO</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">List Your Office Space</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h6 class="fw-bold mb-4">Advice & Insight</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h6 class="fw-bold mb-4">Office Space</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Private Offices in London</a></li>
+                        <li><a href="#">Part-time Offices in London</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h6 class="fw-bold mb-4">On-Demand</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Meeting Rooms</a></li>
+                        <li><a href="#">Day Offices</a></li>
+                        <li><a href="#">Coworking Space in London</a></li>
+                        <li><a href="#">Monthly Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h6 class="fw-bold mb-4">Help</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Help Centre</a></li>
+                        <li><a href="contact us/contact.html">Contact support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-white opacity-25 mb-4">
+
+            <!-- Bottom Footer: Copyright & Social -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-4">
+                <div class="footer-legal d-flex flex-wrap gap-3 small opacity-75">
+                    <span>Copyright © 2026 Yardi Systems, Inc.</span>
+                    <a href="#" class="text-white text-decoration-none">Terms of Use</a>
+                    <a href="#" class="text-white text-decoration-none">Privacy Statement</a>
+                    <a href="#" class="text-white text-decoration-none">Cookie Preferences</a>
+                    <a href="#" class="text-white text-decoration-none">Security</a>
+                    <a href="#" class="text-white text-decoration-none">Sitemap</a>
+                </div>
+                <div class="footer-social d-flex gap-3">
+                    <a href="https://www.linkedin.com/" target="_blank" class="text-white fs-5"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="text-white fs-5"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" class="text-white fs-5"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Hub -->
+    <div class="chat-toggle position-fixed bottom-0 end-0 m-4">
+        <button class="btn btn-danger rounded-circle p-3 shadow-lg">
+            <i class="fas fa-comment-alt fs-4"></i>
+        </button>
+    </div>
+
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
